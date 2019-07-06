@@ -4,6 +4,9 @@ import { Button } from 'reactstrap';
 import Alert from './components/organisms/Alert'
 import DropDown from './components/organisms/Button DropDown'
 import ButtonGroup from './components/organisms/Button Group'
+import Form from './components/organisms/Form'
+import FormGrid from './components/organisms/Form Grid'
+import Modal from './components/organisms/Modal'
 class App extends Component {
   render() {
     return (
@@ -23,7 +26,9 @@ class App extends Component {
         <DropDown/>{' '}
         <DropDown/>{' '}
         <ButtonGroup/>
-
+        <Form/>
+        <FormGrid/>
+        <Modal/>
       </div>
     );
   }
