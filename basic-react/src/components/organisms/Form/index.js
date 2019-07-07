@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Container, Row, Col, Form, FormGroup, Input, Label} from 'reactstrap';
-
+import axios from 'axios';
 
 export default class Form2 extends Component {
     state = {
@@ -9,12 +9,9 @@ export default class Form2 extends Component {
         class:''
     }
 
-    clicked = () => {
-        window.alert('i\m clicked')
-    }
 
     handleChanged = (event) => {
-        console.log(event);
+
         this.setState({
             [event.target.name]: event.target.value
         })
@@ -22,7 +19,17 @@ export default class Form2 extends Component {
 
     onSubmit = (e) => {
         e.preventDefault();
-        console.log('state', this.state)
+        // console.log('state', this.state)
+        axios
+            .post('http://localhost:3004/user', this.state)
+            .then(response => {
+                alert('success add user');
+                console.log(response);
+            })
+            .catch(error => {
+                alert('fail to add user');
+                console.log(error)
+            })
     }
     render() {
         return (

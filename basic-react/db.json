@@ -1,0 +1,39 @@
+{
+  "carts": [
+    {
+      "id": 1,
+      "product": {
+        "id": 10023,
+        "name": "T-Shirt",
+        "price": 20000,
+        "size": "xxl"
+      },
+      "qty": 5
+    },
+    {
+      "id": 2,
+      "product": {
+        "id": 10024,
+        "name": "Battery",
+        "price": 5000,
+        "size": "AAA"
+      }
+    }
+  ],
+  "user": [
+    {
+      "email": "adrianpratama7@yahoo.co.id",
+      "password": "211111",
+      "class": "",
+      "select": "2",
+      "id": 1
+    },
+    {
+      "email": "citytown@yahoo.co.id",
+      "password": "towncity",
+      "class": "",
+      "select": "2",
+      "id": 6
+    }
+  ]
+}
